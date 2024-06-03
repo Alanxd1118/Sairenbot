@@ -9,12 +9,12 @@ global.socialm = " "
 global.location = "Indonesia, Jepang"
 
 global.ownernumber = ['94759094698']  //creator number
-global.ownername = '⇝͜͡ஓீ͜꩟⃢Ｓ𐘉͢𝚤ʹᴙ͞ⱻᴺ͟⃝🪽' //owner name
-global.botname = '⇝͜͡ஓீ͜꩟⃢Ｓ𐘉͢𝚤ʹᴙ͞ⱻᴺ͟⃝🪽' //name of the bot
+global.ownername = '🎓ᴘᴏᴡᴇʀᴇᴅ ᵇʸ͟⇝ꪏ͢🎭[දා.ර්.ශ.නි.ක]🎓🗣️' //owner name
+global.botname = 'ɪᴛᴢ ᴍᴇ ᴋʟᴡ : ꜱᴀɪʀᴇɴ ' //name of the bot
 
 //sticker details
 global.packname = '卂ꪶꪁꪀ・ꪎꪫ'
-global.author = '\n\n\n\n\n\n\n\n\n\n⇝͜͡ஓீ͜꩟⃢Ｓ𐘉͢𝚤ʹᴙ͞ⱻᴺ͟⃝🪽\n\n\n\n\n\n\n\n\n\n\n\n'
+global.author = 'ɪᴛᴢ ᴍᴇ ᴋʟᴡ : ꜱᴀɪʀᴇɴ \n\nContact: +94759094698'
 
 //console view/theme
 global.themeemoji = '🪀'
