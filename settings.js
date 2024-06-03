@@ -3,25 +3,25 @@ const chalk = require('chalk')
 
 //contact details
 global.ownernomer = ['94759094698']
-global.ownername = 'sairen'
+global.ownername = '⇝͜͡ஓீ͜꩟⃢Ｓ𐘉͢𝚤ʹᴙ͞ⱻᴺ͟⃝🪽'
 global.ytname = " "
 global.socialm = " "
 global.location = "Indonesia, Jepang"
 
 global.ownernumber = ['94759094698']  //creator number
-global.ownername = '💖𝙎𝙃𝙄𝙉𝘾𝙃𝘼𝙉 メ 𝙒𝙄𝘽𝙐𝙎𝙊𝙁𝙏💖' //owner name
-global.botname = '〔 ıll ⫹⫺ ©ɴᴇʀᴏʙᴏᴛ ²⁰²⁴/²⁰²⁵ 浤 llı 〕' //name of the bot
+global.ownername = '⇝͜͡ஓீ͜꩟⃢Ｓ𐘉͢𝚤ʹᴙ͞ⱻᴺ͟⃝🪽' //owner name
+global.botname = '⇝͜͡ஓீ͜꩟⃢Ｓ𐘉͢𝚤ʹᴙ͞ⱻᴺ͟⃝🪽' //name of the bot
 
 //sticker details
-global.packname = ''
-global.author = '\n\n\n\n\n\n\n\n\n\n〔 ıll ❬ 𝙎𝙃𝙄𝙉𝘾𝙃𝘼𝙉 メ 𝐒𝐄𝐍𝐏𝐀𝐈 仫 ❭ llı 〕\n 〔 ıll ⫹⫺ 𝙉𝙀𝙍𝙊メ𝐖𝐈𝐁𝐔𝐒𝐎𝐅𝐓 浤 llı 〕\n\n\n\n\n\n\n\n\n\n\n\n'
+global.packname = '卂ꪶꪁꪀ・ꪎꪫ'
+global.author = '\n\n\n\n\n\n\n\n\n\n⇝͜͡ஓீ͜꩟⃢Ｓ𐘉͢𝚤ʹᴙ͞ⱻᴺ͟⃝🪽\n\n\n\n\n\n\n\n\n\n\n\n'
 
 //console view/theme
 global.themeemoji = '🪀'
 global.wm = "Nero Bot Inc."
 
 //theme link
-global.link = 'https://whatsapp.com/channel/0029VaG9VfPKWEKk1rxTQD20'
+global.link = ''
 
 //custom prefix
 global.prefa = ['','!','.','#','&']
