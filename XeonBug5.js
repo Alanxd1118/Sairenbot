@@ -1,3 +1,12 @@
+//base by DGXeon (Xeon Bot Inc.)
+//re-upload? recode? copy code? give credit ya :)
+//YouTube: @DGXeon
+//Instagram: unicorn_xeon13
+//Telegram: t.me/xeonbotinc
+//GitHub: @DGXeon
+//WhatsApp: +916909137213
+//want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@DGXeon
+
 const { default: makeWaSocket, useMultiFileAuthState, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@whiskeysockets/baileys')
 const os = require('os')
 const fs = require('fs') 
@@ -121,7 +130,7 @@ module.exports = XeonBotInc = async (XeonBotInc, m, msg, chatUpdate, store) => {
         const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
         const groupOwner = m.isGroup ? groupMetadata.owner : ''
         const isGroupOwner = m.isGroup ? (groupOwner ? groupOwner : groupAdmins).includes(m.sender) : false
-        const isCreator = [ownernumber, ..._owner].map(v => (typeof v === 'string' ? v.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : v)).includes(m.sender);
+        const isCreator = [ownernumber, ..._owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isPremium = isCreator || isCreator || checkPremiumUser(m.sender, premium);
         expiredCheck(XeonBotInc, m, premium);
 //group chat msg by xeon
@@ -375,7 +384,19 @@ senddocu(buffer)
                 } else {
                     addPremiumUser(args[0] + "@s.whatsapp.net", args[1], premium);
                     replygcxeon("Success")
-                }
+               
+     }
+       break
+case 'remini': {
+			if (!quoted) return replygcxeon(`Where is the picture?`)
+			if (!/image/.test(mime)) return replygcxeon(`Send/Reply Photos With Captions ${prefix + command}`)
+			await XeonStickWait()
+			const { remini } = require('./lib/remini')
+			let media = await quoted.download()
+			let proses = await remini(media, "enhance")
+			XeonBotInc.sendMessage(m.chat, { image: proses, caption: mess.success}, { quoted: m})
+			}          
+                  
                 break
             case 'delprem':
                 if (!isCreator) return replygcxeon(mess.owner)
@@ -951,7 +972,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `${latensi.toFixed(4)} Second`,
-                            thumbnailUrl: 'https://ibb.co/NmhSXCM',
+                            thumbnailUrl: 'https://i.ibb.co/dQkXV2Y/Picsart-23-10-10-18-28-51-982.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -973,7 +994,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `${ownername}`,
-                            thumbnailUrl: 'https://ibb.co/NmhSXCM',
+                            thumbnailUrl: 'https://i.ibb.co/dQkXV2Y/Picsart-23-10-10-18-28-51-982.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -993,7 +1014,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `FORGET DONATE`,
-                            thumbnailUrl: 'https://ibb.co/NmhSXCM',
+                            thumbnailUrl: 'https://i.ibb.co/dQkXV2Y/Picsart-23-10-10-18-28-51-982.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -1013,7 +1034,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `SCRIPT OF ${botname} is on YouTube @DGXeon`,
-                            thumbnailUrl: 'https://ibb.co/NmhSXCM',
+                            thumbnailUrl: 'https://i.ibb.co/dQkXV2Y/Picsart-23-10-10-18-28-51-982.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -2588,7 +2609,7 @@ if (typemenu === 'v1') {
                             externalAdReply: {
                                 title: botname,
                                 body: ownername,
-                                thumbnailUrl: 'https://ibb.co/NmhSXCM/thumb.jpg',
+                                thumbnailUrl: 'https://i.ibb.co/kSs1stX/thumb.jpg',
                                 sourceUrl: link,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -2606,7 +2627,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://ibb.co/NmhSXCM',
+      thumbnailUrl: 'https://i.ibb.co/Wppj16p/cheemspic.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
