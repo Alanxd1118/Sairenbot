@@ -376,6 +376,18 @@ senddocu(buffer)
                     addPremiumUser(args[0] + "@s.whatsapp.net", args[1], premium);
                     replygcxeon("Success")
                 }
+                
+             break             
+case 'remini': {
+			if (!quoted) return replygcxeon(`Where is the picture?`)
+			if (!/image/.test(mime)) return replygcxeon(`Send/Reply Photos With Captions ${prefix + command}`)
+			await XeonStickWait()
+			const { remini } = require('./lib/remini')
+			let media = await quoted.download()
+			let proses = await remini(media, "enhance")
+			XeonBotInc.sendMessage(m.chat, { image: proses, caption: mess.success}, { quoted: m})
+			}   
+                
                 break
             case 'delprem':
                 if (!isCreator) return replygcxeon(mess.owner)
