@@ -59,24 +59,3 @@ global.mess = {
     private: 'This feature is only for private chats',
     wait: 'In process... ',    
     error: 'Error!',
-
-   global.thumb = fs.readFileSync('./XeonMedia/thumb.jpg')
-
-let file = require.resolve(__filename)
-fs.watchFile(file, () => {
-    fs.unwatchFile(file)
-    console.log(chalk.redBright(`Update'${__filename}'`))
-    delete require.cache[file]
-    require(file)
-}) 
-}
-
-global.thumb = fs.readFileSync('./XeonMedia/thumb.jpg')
-
-let file = require.resolve(__filename)
-fs.watchFile(file, () => {
-    fs.unwatchFile(file)
-    console.log(chalk.redBright(`Update'${__filename}'`))
-    delete require.cache[file]
-    require(file)
-})
